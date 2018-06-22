@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "IDBlockWeb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,11 +22,14 @@
     "eslint-import-resolver-webpack": "^0.10.0",
     "offline-plugin": "^5.0.3",
     "precommit-hook": "^3.0.0",
-    "react": "^16.4.0",
+    "react": "^16.4.1",
     "react-dom": "^16.4.0",
+    "react-json-tree": "0.10.9",
     "react-particles": "^0.0.3",
     "react-particles-js": "^2.2.0",
+    "react-redux": "^4.0.0",
     "react-scripts": "1.1.4",
+    "redux": "^3.5.2",
     "redux-devtools": "^3.4.1",
     "redux-devtools-inspector": "^0.11.3",
     "redux-devtools-log-monitor": "^1.4.0",
@@ -44,7 +47,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "jshint .",
-    "validate": "npm ls"
+    "validate": "yarn list"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^16.1.0",
@@ -54,7 +57,6 @@
   },
   "pre-commit": [
     "lint",
-    "validate",
-    "test"
+    "validate"
   ]
 }
