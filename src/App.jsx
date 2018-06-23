@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from "react";
 import Particles from "react-particles-js";
 import logo from "./logo.png";
