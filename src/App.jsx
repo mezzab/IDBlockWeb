@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
 import logo from "./logo.png";
+import pepa from "./images.jpeg";
 import "./App.css";
 import {
   AwesomeButton,
@@ -10,27 +11,81 @@ import {
 } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 
+
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" /> 
         </div>
+        <div className="App-abajo-logo"> 
+        <AwesomeButton type="primary" size="large">
+          About Solution
+          </AwesomeButton>{', ,'}
+          <AwesomeButton type="primary" size="large">
+           About Us
+         </AwesomeButton> 
+         </div> 
         <Particles params={particlesJson} />
-        <AwesomeButton type="primary" size="large">
-          Contact
-        </AwesomeButton>
+    
 
-        <AwesomeButton type="primary" size="large">
-          About Us
-        </AwesomeButton>
-      </div>
+
+        <div>
+        <h2 class="header1">¿Qué es IDBLOCK?</h2>
+
+         <h2 class="header1">¿Quienes Somos?</h2>
+
+         <img src={pepa} alt="logo" /> 
+        
+        <div class="media-container-column">
+            <div class="row justify-content-center">
+                <div class="card p-4 col-12 col-md-6 col-lg-4">
+                    <div class="media pb-3">
+                        <div class="card-img align-self-center">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
+                                Aprender a leer</h4>
+                        </div>
+                    </div>                
+                    <div class="card-box align-left">
+                        <p class="mbr-text mbr-fonts-style display-7">Blindle representará palabras mediante su matriz de puntos, y a la vez, reproducirá la palabra en cuestión</p>
+                    </div>
+                </div>
+
+                <div class="card p-4 col-12 col-md-6 col-lg-4">
+                <div class="media pb-3">
+                    <div class="card-img align-self-center">
+                        <span class="mbr-iconfont mbri-edit" style={{color: 'rgb(118, 118, 118)'}}></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
+                                Escribir libremente</h4>
+                    </div>
+                </div>
+                    <div class="card-box align-left">
+                        <p class="mbr-text mbr-fonts-style display-7">Con Blindle podrás escribir todo lo que desees en braille y sentirlo en tiempo real, para luego almacenarlo en un dispositivo externo.</p>
+                    </div>
+                </div>
+
+                <div class="card-box align-left">
+                        <p class="mbr-text mbr-fonts-style display-7">Blindle te pedirá que escribis una palabra, luego de escribirla verificará si fue escrita correctamente.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+          </div>
+        </div>
     );
   }
 }
 
 export default App;
+
+
 
 export const particlesJson = {
   particles: {
