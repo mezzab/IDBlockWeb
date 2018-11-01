@@ -3,6 +3,12 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 import logo from "./logo.png";
 import "./App.css";
+import {
+  AwesomeButton,
+  AwesomeButtonProgress,
+  AwesomeButtonShare
+} from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
 class App extends Component {
   render() {
@@ -12,6 +18,13 @@ class App extends Component {
           <img src={logo} alt="logo" />
         </div>
         <Particles params={particlesJson} />
+        <AwesomeButton type="primary" size="large">
+          Contact
+        </AwesomeButton>
+
+        <AwesomeButton type="primary" size="large">
+          About Us
+        </AwesomeButton>
       </div>
     );
   }
