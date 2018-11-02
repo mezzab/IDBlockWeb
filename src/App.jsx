@@ -17,7 +17,6 @@ import escaneaDNI from "./EscaneaDni.png"
 import ingresaDatos from "./ingresaDatos.png"
 import selfie from "./selfie.png"
 import validamos from "./validamos.png"
-import check from "./lupa.jpeg"
 
 
 
@@ -49,7 +48,6 @@ class App extends Component {
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
             <h3 class="col1">  <img class="resize" src={checkBlue}/>  Validación digital </h3>
-            <img src={check} /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
             <h3 class="col1">  <img class="resize" src={checkBlue}/> Construir perfiles digitales </h3>
