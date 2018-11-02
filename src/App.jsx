@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 import logo from "./logo.png";
 import pepa from "./images.jpeg";
+import identidad from "./tuidentidad_logo.png";
 import "./App.css";
 import {
   AwesomeButton,
@@ -10,6 +11,7 @@ import {
   AwesomeButtonShare
 } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+import { Column, Row } from 'simple-flexbox';
 
 
 
@@ -33,7 +35,35 @@ class App extends Component {
 
 
         <div>
-        <h2 class="header1">¿Qué es IDBLOCK?</h2>
+         <h2 class="header1">Bienvenido a IDBLOCK</h2>
+         <h3 class="header2">Sistema de identificación y verificación de identidad única digital</h3>
+         
+        <Column flexGrow={1}>
+        <Row vertical='center'>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1"> Validación digital </h3>
+            <img src={identidad} alt="logo" /> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1"> Construir perfiles digitales </h3>
+            <span> column 2 content </span>
+        </Column>
+        </Row>
+
+        <Row vertical='center'>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1"> Captar  información </h3>
+            <img src={identidad} alt="logo" /> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1"> Agilizar los procesos </h3>
+            <span> column 2 content </span>
+        </Column>
+        </Row>
+       </Column>
+
+
+           
 
          <h2 class="header1">¿Quienes Somos?</h2>
 
