@@ -4,6 +4,7 @@ import Particles from "react-particles-js";
 import logo from "./logo.png";
 import pepa from "./images.jpeg";
 import identidad from "./tuidentidad_logo.png";
+import checkBlue from './Blue_check.svg';
 import "./App.css";
 import {
   AwesomeButton,
@@ -12,6 +13,12 @@ import {
 } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { Column, Row } from 'simple-flexbox';
+import escaneaDNI from "./EscaneaDni.png"
+import ingresaDatos from "./ingresaDatos.png"
+import selfie from "./selfie.png"
+import validamos from "./validamos.png"
+import check from "./lupa.jpeg"
+
 
 
 
@@ -35,32 +42,52 @@ class App extends Component {
 
 
         <div>
-         <h2 class="header1">Bienvenido a IDBLOCK</h2>
+         <h2 class="header1">Bienvenido a IdBlock</h2>
          <h3 class="header2">Sistema de identificación y verificación de identidad única digital</h3>
          
         <Column flexGrow={1}>
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1"> Validación digital </h3>
-            <img src={identidad} alt="logo" /> 
+            <h3 class="col1">  <img class="resize" src={checkBlue}/>  Validación digital </h3>
+            <img src={check} /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1"> Construir perfiles digitales </h3>
-            <span> column 2 content </span>
+            <h3 class="col1">  <img class="resize" src={checkBlue}/> Construir perfiles digitales </h3>
         </Column>
         </Row>
 
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1"> Captar  información </h3>
+            <h3 class="col1">  <img class="resize" src={checkBlue}/>  Captar  información </h3>
             <img src={identidad} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1"> Agilizar los procesos </h3>
+            <h3 class="col1">  <img class="resize" src={checkBlue}/> Agilizar los procesos </h3>
             <span> column 2 content </span>
         </Column>
         </Row>
        </Column>
+
+
+        <h3 class="header2">Paso a Paso</h3>
+        <Row vertical='center'>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1">1. Ingresá tus Datos </h3>
+            <img class= "resizeDatos" src={ingresaDatos} alt="logo" /> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1"> 2. Escaneá DNI </h3>
+            <img class= "resizeDNI" src={escaneaDNI} alt="logo" /> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1"> 3. Selfie </h3>
+            <img class= "resizeSelfie" src={selfie} alt="logo" /> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 class="col1">  4. Validamos </h3>
+            <img class= "resizeValidamos" src={validamos} /> 
+        </Column>
+        </Row>
 
 
            
@@ -69,46 +96,10 @@ class App extends Component {
 
          <img src={pepa} alt="logo" /> 
         
-        <div class="media-container-column">
-            <div class="row justify-content-center">
-                <div class="card p-4 col-12 col-md-6 col-lg-4">
-                    <div class="media pb-3">
-                        <div class="card-img align-self-center">
-                        </div>
-                        <div class="media-body">
-                            <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
-                                Aprender a leer</h4>
-                        </div>
-                    </div>                
-                    <div class="card-box align-left">
-                        <p class="mbr-text mbr-fonts-style display-7">Blindle representará palabras mediante su matriz de puntos, y a la vez, reproducirá la palabra en cuestión</p>
-                    </div>
-                </div>
-
-                <div class="card p-4 col-12 col-md-6 col-lg-4">
-                <div class="media pb-3">
-                    <div class="card-img align-self-center">
-                        <span class="mbr-iconfont mbri-edit" style={{color: 'rgb(118, 118, 118)'}}></span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
-                                Escribir libremente</h4>
-                    </div>
-                </div>
-                    <div class="card-box align-left">
-                        <p class="mbr-text mbr-fonts-style display-7">Con Blindle podrás escribir todo lo que desees en braille y sentirlo en tiempo real, para luego almacenarlo en un dispositivo externo.</p>
-                    </div>
-                </div>
-
-                <div class="card-box align-left">
-                        <p class="mbr-text mbr-fonts-style display-7">Blindle te pedirá que escribis una palabra, luego de escribirla verificará si fue escrita correctamente.</p>
-                    </div>
-                </div>
 
                 
             </div>
           </div>
-        </div>
     );
   }
 }

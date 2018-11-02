@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(black , rgb(0, 52, 94));
 }
 
 .App-logo {
@@ -24,10 +25,6 @@
   z-index: 2;
 }
 
-.rubik {
-  font-family: 'Rubik', sans-serif;
-}
-
 .App-title {
   font-size: 1.5em;
 }
@@ -37,14 +34,14 @@
 }
 
 .header1 {
-    color: rgb(68, 171, 255);
+    color: rgb(64, 175, 219);
     padding-bottom: .5rem!important;
     font-style: normal;
     font-weight: 1;
     word-break: break-word;
     word-wrap: break-word;
     font-size: 450%;
-    font-family: 'Rubik', sans-serif;
+    font-family: "msyi";
 } 
 
 
@@ -56,18 +53,14 @@
   word-break: break-word;
   word-wrap: break-word;
   font-size: 250%;
-  font-family: 'Rubik', sans-serif;
+  font-family: msyi;
 } 
 
 .col1 {
   color: rgb(255, 255, 255);
-  padding-bottom: .5rem!important;
-  font-style: normal;
   font-weight: 1;
-  font-size: 250%;
-  font-family: 'Rubik', sans-serif;
-  width: 50%;
-  height: 100%;
+  font-size: 200%;
+  font-family: msyi;
   font-style: italic;
 } 
 
@@ -76,18 +69,31 @@
   justify-content: space-around;
 }
 
-.col2 {
-  position: relative;
-  color: rgb(255, 255, 255);
-  padding-bottom: .5rem!important;
-  font-style: normal;
-  font-weight: 1;
-  font-size: 250%;
-  font-family: 'Rubik', sans-serif;
-  width: 150%;
-  top: -97px;
-  font-style: italic;
-} 
+.resize {
+  width: 40px;
+  height: auto;
+}
+
+.resizeDatos{
+  width: 250px;
+  height: auto;
+}
+
+.resizeSelfie{
+  width: 250px;
+  height: auto;
+}
+
+.resizeDNI{
+  width: 260px;
+  height: auto;
+}
+
+.resizeValidamos{
+  width: 260px;
+  height: auto;
+}
+
 
 
 @keyframes App-logo-spin {
