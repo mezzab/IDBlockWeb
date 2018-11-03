@@ -8,8 +8,6 @@ import checkBlue from './Blue_check.svg';
 import "./App.css";
 import {
   AwesomeButton,
-  AwesomeButtonProgress,
-  AwesomeButtonShare
 } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { Column, Row } from 'simple-flexbox';
@@ -25,73 +23,75 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <div className="App-logo">
           <img src={logo} alt="logo" /> 
         </div>
-        <div className="App-abajo-logo"> 
-        <AwesomeButton type="primary" size="large">
-          About Solution
-          </AwesomeButton>{', ,'}
-          <AwesomeButton type="primary" size="large">
-           About Us
-         </AwesomeButton> 
-         </div> 
-        <Particles params={particlesJson} />
-    
+        <div className="Buttons-container"> 
+          <AwesomeButton className={"Button"} type="primary" size="large">
+            About Solution
+          </AwesomeButton>
+          <AwesomeButton className={"Button"} type="primary" size="large">
+            About Us
+          </AwesomeButton>   
+        </div> 
+
+        <Particles className={"Particles"} params={particlesJson} ></Particles>
+        
 
 
         <div>
-         <h2 class="header1">BIENVENIDO A IDBLOCK</h2>
-         <h3 class="header2">SISTEMA DE IDENTIFICACIÓN Y VERIFICACIÓN DE IDENTIDAD ÚNICA DIGITAL</h3>
+         <h2 className="header1">BIENVENIDO A IDBLOCK</h2>
+         <h3 className="header2">SISTEMA DE IDENTIFICACIÓN Y VERIFICACIÓN DE IDENTIDAD ÚNICA DIGITAL</h3>
          
         <Column flexGrow={1}>
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1">  <img class="resize" src={checkBlue}/>  Validación digital </h3>
-            <img class="resizeValidation" src={validation} alt="logo" /> 
+            <h3 className="col1">  <img className="resize" src={checkBlue}/>  Validación digital </h3>
+            <img className="resizeValidation" src={validation} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1">  <img class="resize" src={checkBlue}/> Construir perfiles digitales </h3>
-            <img class="resizeProfile" src={profile} /> 
+            <h3 className="col1">  <img className="resize" src={checkBlue}/> Construir perfiles digitales </h3>
+            <img className="resizeProfile" src={profile} /> 
         </Column>
         </Row>
 
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1">  <img class="resize" src={checkBlue}/>  Captar  información </h3>
+            <h3 className="col1">  <img className="resize" src={checkBlue}/>  Captar  información </h3>
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1">  <img class="resize" src={checkBlue}/> Agilizar los procesos </h3>
+            <h3 className="col1">  <img className="resize" src={checkBlue}/> Agilizar los procesos </h3>
             <span> column 2 content </span>
         </Column>
         </Row>
        </Column>
 
 
-        <h3 class="header2">PASO A PASO</h3>
+        <h3 className="header2">PASO A PASO</h3>
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1">1. Ingresá tus Datos </h3>
-            <img class= "resizeDatos" src={ingresaDatos} alt="logo" /> 
+            <h3 className="col1">1. Ingresá tus Datos </h3>
+            <img className= "resizeDatos" src={ingresaDatos} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1"> 2. Escaneá DNI </h3>
-            <img class= "resizeDNI" src={escaneaDNI} alt="logo" /> 
+            <h3 className="col1"> 2. Escaneá DNI </h3>
+            <img className= "resizeDNI" src={escaneaDNI} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1"> 3. Selfie </h3>
-            <img class= "resizeSelfie" src={selfie} alt="logo" /> 
+            <h3 className="col1"> 3. Selfie </h3>
+            <img className= "resizeSelfie" src={selfie} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 class="col1">  4. Validamos </h3>
-            <img class= "resizeValidamos" src={validamos} /> 
+            <h3 className="col1">  4. Validamos </h3>
+            <img className= "resizeValidamos" src={validamos} /> 
         </Column>
         </Row>
 
 
            
 
-         <h2 class="header1">¿QUIENES SOMOS?</h2>
+         <h2 className="header1">¿QUIENES SOMOS?</h2>
 
          <img src={pepa} alt="logo" /> 
         
