@@ -18,8 +18,15 @@ import validamos from "./validamos.png"
 import validation from "./Exact-Validation-Rubber-Stamp.png"
 import profile from "./C__fakepath_profile.png"
 import proceso from "./icon-process-300x225.png"
-import marcos from "./C__fakepath_Captura de pantalla de 2018-11-03 12-44-46.png"
+import marcos from "./marcos.png"
+import fede from "./fede.jpeg"
+import franco from "./Franco.jpeg"
+import segundo from "./segundo.jpeg"
 import tincho from "./C__fakepath_tincho.png"
+import lupa from "./C__fakepath_images (1) (1).png"
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+ 
 
 
 class App extends Component {
@@ -32,41 +39,47 @@ class App extends Component {
         </div>
         <div className="Buttons-container"> 
           <AwesomeButton className={"Button"} type="primary" size="large">
-            About Solution
+          <Link activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+          SOLUCIÓN
+           </Link>
           </AwesomeButton>
           <AwesomeButton className={"Button"} type="primary" size="large">
-            About Us
+          <Link activeClass="active" to="test2" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+          QUIENES SOMOS?
+           </Link>
           </AwesomeButton>   
         </div> 
 
         <Particles className={"Particles"} params={particlesJson} ></Particles>
-        
-
 
         <div>
-         <h2 className="header1">BIENVENIDO A IDBLOCK</h2>
+       
+         <Element name="test1" className="element">
+        .
+        </Element>
+        <h2 className="header1">BIENVENIDO A IDBLOCK</h2>
          <h3 className="header2">SISTEMA DE IDENTIFICACIÓN Y VERIFICACIÓN DE IDENTIDAD ÚNICA DIGITAL</h3>
          
 
         <div class="d-flex justify-content-around">
         <Row>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1"><img className="resize" src={checkBlue}/>Validación digital </h3>
+            <h3 className="col1"><img className="resize" src={checkBlue}/>VALIDACIÓN DIGITAL </h3>
             <img className="resizeValidation" src={validation} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1"><img className="resize" src={checkBlue}/> Construir perfiles digitales </h3>
+            <h3 className="col1"><img className="resize" src={checkBlue}/> CONSTRUCCIÓN PERFIL DIGITAL </h3>
             <img className="resizeProfile" src={profile} /> 
         </Column>
         </Row>
  
         <Row>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1"><img className="resize" src={checkBlue}/> Captar  información </h3>
-    
+            <h3 className="col1"><img className="resize" src={checkBlue}/> CAPCIÓN INFORMACIÓN </h3>
+            <img className="resizeProceso" src={lupa} /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">  <img className="resize" src={checkBlue}/> Agilizar los procesos </h3>
+            <h3 className="col1">  <img className="resize" src={checkBlue}/> AGILIZACIÓN PROCESOS </h3>
             <img className="resizeProceso" src={proceso} /> 
         </Column>
         </Row>
@@ -96,34 +109,39 @@ class App extends Component {
 
 
            
-
+        <Element name="test2" className="element">
+        .
+        </Element>
          <h2 className="header1">¿QUIENES SOMOS?</h2>
 
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">Marcos Mezzabotta </h3>
-            <img className= "resizeFotos" src={marcos}/> 
+            <h3 className="col1">SANTIAGO SEGUNDO BERMEJO</h3>
+            <img className= "resizeFotos" src={segundo}/> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">Martín Bec</h3>
-            <img className= "resizeFotos" src={tincho} /> 
-        </Column>
-        <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">Franco Scagnetti</h3>
-            <img className= "resizeSelfie" src={selfie} alt="logo" /> 
+            <h3 className="col1">FEDERICO MENENDEZ</h3>
+            <img className= "resizeFotos" src={fede} alt="logo" /> 
         </Column>
         </Row>
 
-       <Row vertical='center'>
+
+        <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">Santiago Segundo Bermejo</h3>
+            <h3 className="col1">MARCOS MEZZABOTTA</h3>
             <img className= "resizeFotos" src={marcos}/> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">Federico Menendez</h3>
-            <img className= "resizeDNI" src={escaneaDNI} alt="logo" /> 
+            <h3 className="col1">MARTÍN BEC</h3> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 className="col1">FRANCO SCAGNETTI</h3>
+            <img className= "resizeFotos" src={franco} alt="logo" /> 
         </Column>
         </Row>
+
+   
+        
         
         
 

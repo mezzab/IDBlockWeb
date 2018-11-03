@@ -31,6 +31,7 @@
     "react-particles-js": "^2.2.0",
     "react-redux": "^4.0.0",
     "react-scripts": "1.1.4",
+    "react-scroll": "^1.7.10",
     "redux": "^3.5.2",
     "redux-devtools": "^3.4.1",
     "redux-devtools-inspector": "^0.11.3",
