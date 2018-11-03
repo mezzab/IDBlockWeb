@@ -17,6 +17,9 @@ import selfie from "./selfie.png"
 import validamos from "./validamos.png"
 import validation from "./Exact-Validation-Rubber-Stamp.png"
 import profile from "./C__fakepath_profile.png"
+import proceso from "./icon-process-300x225.png"
+import marcos from "./C__fakepath_Captura de pantalla de 2018-11-03 12-44-46.png"
+import tincho from "./C__fakepath_tincho.png"
 
 
 class App extends Component {
@@ -44,28 +47,31 @@ class App extends Component {
          <h2 className="header1">BIENVENIDO A IDBLOCK</h2>
          <h3 className="header2">SISTEMA DE IDENTIFICACIÓN Y VERIFICACIÓN DE IDENTIDAD ÚNICA DIGITAL</h3>
          
-        <Column flexGrow={1}>
-        <Row vertical='center'>
+
+        <div class="d-flex justify-content-around">
+        <Row>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">  <img className="resize" src={checkBlue}/>  Validación digital </h3>
+            <h3 className="col1"><img className="resize" src={checkBlue}/>Validación digital </h3>
             <img className="resizeValidation" src={validation} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">  <img className="resize" src={checkBlue}/> Construir perfiles digitales </h3>
+            <h3 className="col1"><img className="resize" src={checkBlue}/> Construir perfiles digitales </h3>
             <img className="resizeProfile" src={profile} /> 
         </Column>
         </Row>
-
-        <Row vertical='center'>
+ 
+        <Row>
         <Column flexGrow={1} horizontal='center'>
-            <h3 className="col1">  <img className="resize" src={checkBlue}/>  Captar  información </h3>
+            <h3 className="col1"><img className="resize" src={checkBlue}/> Captar  información </h3>
+    
         </Column>
         <Column flexGrow={1} horizontal='center'>
             <h3 className="col1">  <img className="resize" src={checkBlue}/> Agilizar los procesos </h3>
-            <span> column 2 content </span>
+            <img className="resizeProceso" src={proceso} /> 
         </Column>
         </Row>
-       </Column>
+        </div>
+     
 
 
         <h3 className="header2">PASO A PASO</h3>
@@ -93,7 +99,32 @@ class App extends Component {
 
          <h2 className="header1">¿QUIENES SOMOS?</h2>
 
-         <img src={pepa} alt="logo" /> 
+        <Row vertical='center'>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 className="col1">Marcos Mezzabotta </h3>
+            <img className= "resizeFotos" src={marcos}/> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 className="col1">Martín Bec</h3>
+            <img className= "resizeFotos" src={tincho} /> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 className="col1">Franco Scagnetti</h3>
+            <img className= "resizeSelfie" src={selfie} alt="logo" /> 
+        </Column>
+        </Row>
+
+       <Row vertical='center'>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 className="col1">Santiago Segundo Bermejo</h3>
+            <img className= "resizeFotos" src={marcos}/> 
+        </Column>
+        <Column flexGrow={1} horizontal='center'>
+            <h3 className="col1">Federico Menendez</h3>
+            <img className= "resizeDNI" src={escaneaDNI} alt="logo" /> 
+        </Column>
+        </Row>
+        
         
 
                 
@@ -113,7 +144,7 @@ export const particlesJson = {
       value: 90,
       density: {
         enable: true,
-        value_area: 900
+        value_area: 1500
       }
     },
     color: {
