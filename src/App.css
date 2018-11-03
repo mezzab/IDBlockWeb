@@ -35,31 +35,26 @@
 
 .header1 {
     color: rgb(64, 175, 219);
-    padding-bottom: .5rem!important;
-    font-style: normal;
-    font-weight: 1;
-    word-break: break-word;
-    word-wrap: break-word;
-    font-size: 450%;
+    font-weight: 700;
+    font-size: 600%;
     font-family: "msyi";
 } 
 
 
 .header2 {
   color: rgb(181, 220, 252);
-  padding-bottom: .5rem!important;
   font-style: normal;
   font-weight: 1;
   word-break: break-word;
   word-wrap: break-word;
-  font-size: 250%;
-  font-family: msyi;
+  font-size: 300%;
+  font-family: "msyi";
 } 
 
 .col1 {
   color: rgb(255, 255, 255);
   font-weight: 1;
-  font-size: 200%;
+  font-size: 250%;
   font-family: msyi;
   font-style: italic;
 } 
@@ -71,6 +66,11 @@
 
 .resize {
   width: 40px;
+  height: auto;
+}
+
+.resizeValidation {
+  width: 500px;
   height: auto;
 }
 
@@ -94,6 +94,11 @@
   height: auto;
 }
 
+.resizeProfile{
+  width: 350px;
+  height: auto;
+}
+
 
 
 @keyframes App-logo-spin {
@@ -103,4 +108,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: msyi;
+  src: url(msyi.ttf);
 }

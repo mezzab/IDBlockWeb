@@ -17,8 +17,8 @@ import escaneaDNI from "./EscaneaDni.png"
 import ingresaDatos from "./ingresaDatos.png"
 import selfie from "./selfie.png"
 import validamos from "./validamos.png"
-
-
+import validation from "./Exact-Validation-Rubber-Stamp.png"
+import profile from "./C__fakepath_profile.png"
 
 
 class App extends Component {
@@ -41,23 +41,24 @@ class App extends Component {
 
 
         <div>
-         <h2 class="header1">Bienvenido a IdBlock</h2>
-         <h3 class="header2">Sistema de identificación y verificación de identidad única digital</h3>
+         <h2 class="header1">BIENVENIDO A IDBLOCK</h2>
+         <h3 class="header2">SISTEMA DE IDENTIFICACIÓN Y VERIFICACIÓN DE IDENTIDAD ÚNICA DIGITAL</h3>
          
         <Column flexGrow={1}>
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
             <h3 class="col1">  <img class="resize" src={checkBlue}/>  Validación digital </h3>
+            <img class="resizeValidation" src={validation} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
             <h3 class="col1">  <img class="resize" src={checkBlue}/> Construir perfiles digitales </h3>
+            <img class="resizeProfile" src={profile} /> 
         </Column>
         </Row>
 
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
             <h3 class="col1">  <img class="resize" src={checkBlue}/>  Captar  información </h3>
-            <img src={identidad} alt="logo" /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
             <h3 class="col1">  <img class="resize" src={checkBlue}/> Agilizar los procesos </h3>
@@ -67,7 +68,7 @@ class App extends Component {
        </Column>
 
 
-        <h3 class="header2">Paso a Paso</h3>
+        <h3 class="header2">PASO A PASO</h3>
         <Row vertical='center'>
         <Column flexGrow={1} horizontal='center'>
             <h3 class="col1">1. Ingresá tus Datos </h3>
@@ -90,7 +91,7 @@ class App extends Component {
 
            
 
-         <h2 class="header1">¿Quienes Somos?</h2>
+         <h2 class="header1">¿QUIENES SOMOS?</h2>
 
          <img src={pepa} alt="logo" /> 
         
