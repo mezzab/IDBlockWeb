@@ -22,7 +22,7 @@ import marcos from "./marcos.png"
 import fede from "./fede.jpeg"
 import franco from "./Franco.jpeg"
 import segundo from "./segundo.jpeg"
-import tincho from "./C__fakepath_tincho.png"
+import martin from "./tincho.jpeg"
 import lupa from "./C__fakepath_images (1) (1).png"
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -133,10 +133,11 @@ class App extends Component {
         </Column>
         <Column flexGrow={1} horizontal='center'>
             <h3 className="col1">MARTÍN BEC</h3> 
+            <img className= "resizeFotos" src={martin} /> 
         </Column>
         <Column flexGrow={1} horizontal='center'>
             <h3 className="col1">FRANCO SCAGNETTI</h3>
-            <img className= "resizeFotos" src={franco} alt="logo" /> 
+            <img className= "resizeFotos" src={franco} /> 
         </Column>
         </Row>
 
